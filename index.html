@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main id="container">
+       
+        <div id="out">
+            <p id="outTop"></p>
+            <p id="outBottom"></p>
+
+        </div>
+        
+        <div id="top">
+            <button class="bot1" onclick="clickMe('(')">(</button>
+            <button class="bot1" onclick="clickMe(')')">)</button>
+            <button class="bot1" onclick="calculate()">ans</button>
+            <button class="bot1" data-action="del" onclick="remove(del)">del</button>
+            <button class="bot1" data-action="clear" onclick="erase(clear)">clear</button>
+
+        </div>
+        <br>
+
+        <div>
+            <button id="seven" onclick="clickMe(7)">7</button>
+            <button id="eight" onclick="clickMe(8)">8</button>
+            <button id="nine" onclick="clickMe(9)">9</button>
+            <button class="bot1" onclick="clickMe('%')">%</button>
+            <button class="bot1" onclick="clickMe('Math.sqrt(')">√</button>
+
+        </div>
+        <br>
+
+        <div>
+            <button id="four" onclick="clickMe(4)">4</button>
+            <button id="five" onclick="clickMe(5)">5</button>
+            <button id="six" onclick="clickMe(6)">6</button>
+            <button class="bot1" data-action="multiply" onclick="clickMe('*')">×</button>
+            <button class="bot1" data-action="divide" onclick="clickMe('/')">÷</button>
+
+        </div>
+        <br>
+
+        <div>
+            <button id="one" onclick="clickMe(1)">1</button>
+            <button id="two" onclick="clickMe(2)">2</button>
+            <button id="three" onclick="clickMe(3)">3</button>
+            <button class="bot1" data-action="add" onclick="clickMe('+')">+</button>
+            <button class="bot1" data-action="subtract" onclick="clickMe('-')">-</button>
+
+        </div>
+        <br>
+
+        <div>
+            <button class="bot1" data-action="decimal" onclick="clickMe('.')">.</button>
+            <button id="zero" onclick="clickMe(0)">0</button>
+            <button class="bot1" onclick="clickMe('**')">^</button>
+            <button id="enter" data-action="calculate" onclick="calculate()">ENTER</button>
+
+        </div>
+        
+    </main>
+   
+    <script src="script.js"></script>
+</body>
+</html>
